@@ -1,0 +1,108 @@
+<div class="wrapper">
+  <div class="main">
+    
+    <section class="page page1">
+      <div class="page_container_top">
+        <div id="profilr-logo"></div>
+
+        <div id="subscribe-box">
+          <%= form_for @subscriber, url: subscribers_path do |f| %>
+            <div id="input-email-field">
+              <div class="row collapse">
+                <div class="large-4 large-offset-3 columns">
+                  <%= f.text_field :email, placeholder: "Learn more about Profilr" %>
+                </div>
+                <div class="large-2 columns">
+                  <%= f.submit "Send Email", class: "postfix small button expand" %>
+                </div>
+                <div class="large-4 columns">
+                </div>
+              <% end %>
+            </div>
+          </div>
+      
+          <div id="alert-box">
+            <% flash.each do |k, v| %>
+              <div class="<%= k %>"><%= v %></div>
+            <% end %>
+          </div>
+
+        </div>
+
+        <div id="jumpto-links">
+          <button id="jump-to-2">
+            <i class="fi-monitor jump-to-icon"></i>
+            </br>
+            <h2>Showcase</h2>
+          </button>
+     
+          <button id="jump-to-3">
+            <i class="fi-html5 jump-to-icon"></i>
+            </br>
+            <h2>Learn</h2>
+          </button>
+        
+          <button id="jump-to-4">
+            <i class="fi-magnifying-glass jump-to-icon"></i>
+            </br>
+            <h2>Explore</h2>
+          </button>
+      
+          <button id="jump-to-5">
+            <i class="fi-comments jump-to-icon"></i>
+            </br>
+            <h2>Collaborate</h2>
+          </button>
+        </div>
+      </div> 
+      <div id="credits-box">
+        <h2>An open source platform built by Eddie Lau, Kingsley Man, Robyn Steinberg, Karen Farzam and Stephanie Siaw</h2>
+      </div>
+    </section>
+    
+    <section class="page page2">
+      <div class="page_container">
+        <i class="fi-monitor page-icon"></i></br>
+        <h1>SHOWCASE</h1>
+        <h2>Showcase your work</h2>
+       
+       
+      </div>
+    </section>
+    
+    <section class="page page3">
+      <div class="page_container">
+        <i class="fi-html5 page-icon"></i></br>
+        <h1>LEARN</h1>
+        <h2>Learn more and test your skills</h2>
+       
+      </div>
+    </section>
+
+    <section class="page page4">
+      <div class="page_container">
+        <i class="fi-magnifying-glass page-icon"></i></br>
+        <h1>EXPLORE</h1>
+        <h2>Access class material worldwide</h2>
+       
+      </div>
+    </section>
+
+    <section class="page page5">
+      <div class="page_container">
+        <i class="fi-comments page-icon"></i></br>
+        <h1>COLLABORATE</h1>
+        <h2>Collaborate and code together in real-time</h2>
+            
+      </div>
+    </section>
+
+  </div>
+    
+  </div>
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+      $('#alert-box').fadeOut(5000);
+   })
+  </script>

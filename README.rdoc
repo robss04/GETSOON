@@ -1,0 +1,22 @@
+== Profilr - Classroom on the Cloud
+An online learning platform for web developers made by students and instructors from General Assembly's WDI course. Users can learn to code with online quizzes, collaborate and code with others in real-time, access class material worldwide and showcase their work.
+
+== Environment configuration
+* Ruby 2.0.0p247
+* MongoDB/ Mongoid
+
+* Mail Chimp API
+* Gibbon RubyGem
+
+* Foundation Icon fonts
+* JQuery One Page Scroller 
+
+== Demo page
+(Coming Soon)  http://profilr-beta.herokuapp.com
+
+== List of contributors
+Eddie Lau https://github.com/3dd13
+Stephanie Siaw https://github.com/stephs829 
+Robyn Steinberg https://github.com/robss04
+Karen Farzam https://github.com/KarenZam
+Kingsley Man https://github.com/kingsleyman
